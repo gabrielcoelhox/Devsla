@@ -1,3 +1,10 @@
+/* VARIÁVEIS */
+:root {
+    --header-color: #000;
+    --h1-color: #393C41;
+    --h2-color: #6E7378;
+}
+
 /* FONTES */
 
 @font-face {
@@ -23,7 +30,10 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    background-color: tomato;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
 }
 
 header ul, header li {
@@ -40,11 +50,86 @@ header ul, header li {
 }
 
 .middle li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .middle a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
+    color: var(--header-color);
 }
+
+.rightside ul {
+    display: flex;
+}
+
+.rightside li {
+    margin: 0 10px;
+}
+
+.rightside a {
+    text-decoration: none;
+    color: var(--header-color);
+    padding: 14px;
+}
+
+.menu--icon {
+    width: 18px;
+    height: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.menu--icon div {
+    width: 2px;
+    background-color: var(--header-color);
+}
+
+/* MAIN */
+
+main {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info h1 {
+    font-size: 40px;
+    font-weight: normal;
+    color: var(--h1-color);
+    text-align: center;
+    margin: 0;
+}
+
+.info h2 {
+    font-size: 14px;
+    font-family: 'GothamBook', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: var(--h2-color);
+    text-align: center;
+}
+
+.info h2 a {
+    text-decoration: underline;
+    color: var(--h2-color);
+}
+
+.info h2 a:hover{
+    font-weight: bold;
+    color: var(--header-color);
+    transition: .5s;
+    animation-duration: 1.0s;
+    text-decoration: underline;
+}
+
+/* FOOTER */
