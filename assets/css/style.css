@@ -195,3 +195,29 @@ footer {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
 }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+    .middle {
+        display: none;
+    }
+    .rightside li {
+        display: none;
+    }
+    .rightside li.menu{
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .buttons--area {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons--area a {
+        margin-top: 20px;
+        width: calc(100vw - 50vw);
+    }
+}
