@@ -3,6 +3,8 @@
     --header-color: #000;
     --h1-color: #393C41;
     --h2-color: #6E7378;
+    --btn-dark-bg: rgba(23, 26, 32, 0.8);
+    --btn-light-bg: rgba(255, 255, 255, 0.65);
 }
 
 /* FONTES */
@@ -69,7 +71,6 @@ header ul, header li {
 .rightside a {
     text-decoration: none;
     color: var(--header-color);
-    padding: 14px;
 }
 
 .menu--icon {
@@ -133,3 +134,64 @@ main .info {
 }
 
 /* FOOTER */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    right: 0;
+}
+
+.buttons--area{
+    display: flex;
+    justify-content: center;
+}
+
+.buttons--area a {
+    display: block;
+    width: 220px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: .1rem;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 0 15px;
+}
+
+.btn--dark {
+    color: #fff;
+    background-color: var(--btn-dark-bg);
+}
+
+.btn--light {
+    color: var(--header-color);
+    background-color: var(--btn-light-bg);
+}
+
+.arrow--area {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 15px;
+}
+
+@keyframes arrow{
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: 7.5px;
+    }
+    100% {
+        margin-top: 15px;
+    }
+}
+
+.arrow {
+    height: 15px;
+    animation-name: arrow;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
