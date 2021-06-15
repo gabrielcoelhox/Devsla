@@ -16,4 +16,4 @@ https://gabrielcoelhox.github.io/bikcraft/
 
 ## Demonstração Mobile
 
-![GIF](github/mobile.gif)
+![GIF](github/mobile.png)
