@@ -6,7 +6,7 @@ Exercício realizado como aprendizado das aulas do curso da B7WEB, recriando o s
 
 ## Link
 
-https://gabrielcoelhox.github.io/bikcraft/
+https://gabrielcoelhox.github.io/Devsla/
 
 ## 📷 Veja 📷
 
